@@ -16,9 +16,9 @@ def update_deals():
     return deals
 
 
-def new_deals(deals):
+def new_deals(old_deals):
     maybe_new_deals = update_deals()
-    if deals == maybe_new_deals:
+    if old_deals == maybe_new_deals:
         return False
     else:
         return True
